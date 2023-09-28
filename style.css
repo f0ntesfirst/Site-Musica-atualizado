@@ -1,6 +1,11 @@
 @import url("styles/header.css");
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+￼E-mail ou telefone
 
 :root{
     --cor-de--fundo: #9dbedd;
@@ -10,7 +15,8 @@
     --link-1: #ffffff;
     --link-2: #F0E68C;
     --link-3: #98FB98;
-    --fonte-principal:"Fasthand"
+    --fonte-principal:"Fasthand";
+    --fonte-secundaria:"Montserrat";
 
 }
 *{
@@ -32,7 +38,7 @@ body{
     background-position: center;
 }
 .cabeçalho{
-    background-color: var(--cor-do-menu);
+    background-color: #77aadd;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,22 +86,23 @@ body{
     display: none;
 }
 .topicos{
-    background-color: var(--cor-do-menu-fundo);
+    background-color: #336ca5;
     text-align: center;
     border-radius: 10px;
 }
 .topicos__titulos{
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 300;
-    padding: 1em 0;
+    
 }
 .topicos__listas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 .topicos__link{
-    color: black;
+    color: gold;
     text-decoration: none;
     padding: 1em;
     border-radius: 18px;
@@ -107,11 +114,15 @@ body{
 .topicos__itens{
     margin: 2em 0.5em;
     
+    
 }
 .contato{
-    background-color: #1a2431;
-    padding: 1em;
-    border-bottom: 10%;
+    background-color: #2d3c50;
+    padding: 0 2em;
+    margin-top: 2em;
+    border-bottom: 40%;
+    border-color: white;
+    border-radius:30px;
 }
 .contato__titulo, .contato__texto{
     color: white;
@@ -132,6 +143,7 @@ body{
     border: 1px solid var(--color-do-menu-fundo);
     border-radius: 24px;
     width: 98%;
+    margin-bottom: 2em;
 }
 .contato__email::placeholder{
     font-family: var(---fonte-principal);
@@ -140,7 +152,7 @@ body{
     color: var(--cor-do-menu-fundo);
 }
 .carrossel__titulo{
-    color: var(--link-1);
+    color: white;
     text-align: center;
     text-transform: uppercase;
     background-color: var(--cor-de-fundo);
@@ -255,8 +267,10 @@ body{
     padding: 1em;
 }
 .rodape {
-    background-color: var(--cor-do-menu);
+    background-color: #336ca5;
     padding: 13px 0;
+    border-radius: 20px;
+    color: gold;
    
     
 }
@@ -264,7 +278,7 @@ body{
 .rodape_text {
     margin: 10px;
     font-size: 20px;
-    color: #000000;
+    color: white;
     text-align: center;
 }
 .edite-1{
